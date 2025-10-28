@@ -142,3 +142,78 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-title {
+  margin: 6px 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #ffffff, #fbfbff);
+  border: 1px solid #eceefb;
+  padding: 8px 10px;
+  border-radius: 999px;
+  max-width: 100%;
+  box-shadow: 0 1px 0 rgba(18, 18, 18, 0.02);
+  font-size: 14px;
+  color: #333;
+}
+
+.participant-item.empty {
+  background: #fafafa;
+  border-style: dashed;
+  color: #777;
+  justify-content: center;
+}
+
+.participant-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1a237e;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  flex: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.participant-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Ensure small screens look good */
+@media (max-width: 420px) {
+  .participant-item {
+    padding: 6px 8px;
+    gap: 8px;
+  }
+
+  .participant-email {
+    font-size: 13px;
+  }
+}
